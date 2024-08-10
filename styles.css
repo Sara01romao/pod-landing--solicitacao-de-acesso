@@ -19,19 +19,18 @@
 body{
     font-family: "Chivo", sans-serif;
     background-color: var(--background-color);
-    height: 100vh;
     display: flex;
     justify-content: end;
     align-items: center;
+    background-image: url('./imgs/bg-img.png');
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 
 section{
     max-width: 1275px;
     width: 100%;
-    background-image: url('./imgs/bg-img.png');
-    background-repeat: no-repeat;
-    background-position: right;
     padding: 39px;
     
 }
@@ -141,4 +140,54 @@ form .campo-container button:hover{
     align-items: center;
     margin-top: 42px;
     gap: 42px;
+}
+
+
+@media screen and (max-width:768px) {
+    main{
+        padding: 88px 58px 0px 39px;
+    }
+
+    main h1{
+        font-size: 42px;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    body{
+        background-position: center;
+        background-size: cover;
+    }
+
+   section{
+        background-position: center;
+        background-size: cover;
+        background: #2c344b82;
+   }
+
+   main{
+     background: none;
+   }
+
+   main h1{
+    text-align:center
+   }
+    
+   main p{
+    text-align: center;
+   }
+
+
+   form .campo-container{
+      background: none;
+      flex-direction: column;
+      height: initial;
+   }
+
+   form .campo-container input{
+        border-radius: 50px;
+    
+   }
+    
 }
