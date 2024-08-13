@@ -32,6 +32,7 @@ section{
     max-width: 1275px;
     width: 100%;
     padding: 39px;
+    position: relative;
     
 }
 
@@ -160,6 +161,13 @@ form .campo-container button:hover{
     gap: 42px;
 }
 
+.detalhe-bolas{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    
+}
+
 
 @media screen and (min-width:768px) and (max-width:1203px) {
     main{
@@ -168,6 +176,12 @@ form .campo-container button:hover{
 
     main h1{
         font-size: 42px;
+    }
+    .detalhe-bolas{
+        position: absolute;
+        right: initial;
+        bottom: -93px;
+       
     }
     
 }
@@ -183,6 +197,7 @@ form .campo-container button:hover{
         background-size: cover;
         background: #2c344b82;
         padding: 39px 25px;
+        
    }
 
    main{
@@ -223,19 +238,25 @@ form .campo-container button:hover{
    }
 
    .logos-canais-container{
-    margin-top: 0px;
-    margin-bottom: 42px;
-    gap: 10px;
-    justify-content: center;
+        margin-top: 0px;
+        margin-bottom: 42px;
+        gap: 10px;
+        justify-content: center;
    }
 
    .msg-campo{
-    text-align: center;
-    display: flex;
-    padding: 0px;
-    justify-content: center;
+        text-align: center;
+        display: flex;
+        padding: 0px;
+        justify-content: center;
     
    }
     
+
+   .detalhe-bolas{
+       
+     display: none;
+    }
 }
+
 
