@@ -13,7 +13,7 @@
 
 ## 💻  Sobre o Projeto
 
-POD-Landing Page funcional para capturar solicitações de acesso, com um design morderno e intuitivo que facilita a solicitação de acesso de forma rápida com e um campo de e-mail.
+POD-Landing Page funcional para capturar solicitações de acesso, com um design moderno e intuitivo que facilita a solicitação de acesso de forma rápida com e um campo de e-mail.
 <br>
 <br>
 Fonte: Desafio Frontend Mentor
