@@ -14,7 +14,7 @@ document.getElementById('enviar').addEventListener('click', (evt) => {
     } else {
         msgCampo.classList.remove('active');
         msgCampo.classList.add('enviado');
-        msgCampo.textContent = 'Email enviado!';
+        msgCampo.textContent = 'Email sent!';
         document.querySelector('.email').value ="";
 
         setTimeout(() => {
