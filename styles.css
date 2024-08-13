@@ -1,43 +1,37 @@
-
-:root{
-    --primary-color: #54E6AF; 
-    --background-color: #121725; 
-    --white:#FFFFFF;
-    --gray-light: #C2CBE5; 
-    --gray-medium: #5A668A; 
-    --gray-dark: #2C344B;
+:root {
+    --primary-color: #54e6af;
+    --background-color: #121725;
+    --white: #ffffff;
+    --gray-light: #c2cbe5;
+    --gray-medium: #5a668a;
+    --gray-dark: #2c344b;
 }
 
-
-*{
+* {
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-body{
+body {
     font-family: "Chivo", sans-serif;
     background-color: var(--background-color);
     display: flex;
     justify-content: end;
     align-items: center;
-    background-image: url('./imgs/bg-img.png');
+    background-image: url("./imgs/bg-img.png");
     background-repeat: no-repeat;
     background-position: right;
 }
 
-
-section{
+section {
     max-width: 1275px;
     width: 100%;
     padding: 39px;
     position: relative;
-    
 }
 
-main{
-    
+main {
     background: var(--background-color);
     display: flex;
     flex-direction: column;
@@ -47,30 +41,28 @@ main{
     margin-top: 103px;
 }
 
-main h1{
+main h1 {
     color: var(--primary-color);
     font-size: 52px;
     text-transform: uppercase;
     font-weight: 300;
-    margin-bottom: 24px ;
+    margin-bottom: 24px;
 }
 
-main h1 span{
+main h1 span {
     color: var(--white);
 }
 
-
-main p{
+main p {
     font-size: 18px;
     font-weight: 300;
     color: var(--gray-light);
     margin-bottom: 40px;
     max-width: 445px;
     line-height: 28px;
-
 }
 
-form .campo-container{
+form .campo-container {
     max-width: 427px;
     width: 100%;
     height: 56px;
@@ -83,7 +75,7 @@ form .campo-container{
     padding: 5px;
 }
 
-form .campo-container input{
+form .campo-container input {
     height: 56px;
     background: var(--gray-dark);
     max-width: 100%;
@@ -95,21 +87,20 @@ form .campo-container input{
     color: var(--white);
     font-size: 14px;
     font-weight: 400;
-    
 }
 
-input:focus{
+input:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
 }
 
-form .campo-container input::placeholder{
+form .campo-container input::placeholder {
     font-size: 14px;
-    color:var(--gray-light);
+    color: var(--gray-light);
 }
 
-form .campo-container button{
+form .campo-container button {
     background-color: var(--primary-color);
     color: var(--background-color);
     border: none;
@@ -122,13 +113,12 @@ form .campo-container button{
     transition: 0.5s ease;
 }
 
-form .campo-container button:hover{
-    background-color:#B3FFE2;
+form .campo-container button:hover {
+    background-color: #b3ffe2;
     transition: 0.5s ease;
-   
 }
 
-.msg-campo{
+.msg-campo {
     margin-top: 8px;
     padding-left: 32px;
     color: var(--primary-color);
@@ -139,136 +129,115 @@ form .campo-container button:hover{
     transition: opacity 0.5s ease-in-out;
 }
 
-
-
-
 .msg-campo.active {
     display: flex;
     opacity: 1;
-    color: #FB3E3E;
+    color: #fb3e3e;
 }
 
 .msg-campo.enviado {
     display: flex;
     opacity: 1;
-    
 }
 
-.logos-canais-container{
+.logos-canais-container {
     display: flex;
     align-items: center;
     margin-top: 42px;
     gap: 42px;
 }
 
-.detalhe-bolas{
+.detalhe-bolas {
     position: absolute;
     right: 0;
     bottom: -10px;
-    
 }
 
-
-@media screen and (min-width:768px) and (max-width:1203px) {
-    main{
+@media screen and (min-width: 768px) and (max-width: 1203px) {
+    main {
         padding: 88px 58px 20px 39px;
     }
 
-    main h1{
+    main h1 {
         font-size: 42px;
     }
-    .detalhe-bolas{
+    .detalhe-bolas {
         position: absolute;
         right: initial;
         bottom: -153px;
         left: 30px;
-       
     }
-    
 }
 
-
-
-@media screen and (max-width:767px) {
-  
-    body{
+@media screen and (max-width: 767px) {
+    body {
         background-position: center;
         background-size: cover;
     }
 
-   section{
+    section {
         background-position: center;
         background-size: cover;
         background: #121725de;
         padding: 39px 25px;
-        
-   }
+    }
 
-   .logo{
+    .logo {
         display: flex;
         justify-content: center;
     }
 
+    main {
+        background: none;
+        padding: 0px;
+    }
 
-   main{
-     background: none;
-     padding: 0px;
-   }
+    main h1 {
+        text-align: center;
+        font-size: 38px;
+    }
 
-   main h1{
-    text-align:center;
-    font-size:38px;
-   }
-    
-   main p{
-    text-align: center;
-    margin: 0px auto 33px;
-   }
+    main p {
+        text-align: center;
+        margin: 0px auto 33px;
+    }
 
-   form{
-    order: 2;
-   }
+    form {
+        order: 2;
+    }
 
-   form .campo-container{
-      background: none;
-      flex-direction: column;
-      height: initial;
-      gap: 16px;
-      margin: 0 auto;
-   }
+    form .campo-container {
+        background: none;
+        flex-direction: column;
+        height: initial;
+        gap: 16px;
+        margin: 0 auto;
+    }
 
-   form .campo-container input{
-      border-radius: 50px;
-      padding: 0px 27px;
-    
-   }
+    form .campo-container input {
+        border-radius: 50px;
+        padding: 0px 27px;
+    }
 
-   form .campo-container button{
-       width: 100%;
-   }
+    form .campo-container button {
+        width: 100%;
+    }
 
-   .logos-canais-container{
+    .logos-canais-container {
         margin-top: 0px;
         margin-bottom: 42px;
         gap: 10px;
         justify-content: center;
-   }
+    }
 
-   .msg-campo{
+    .msg-campo {
         text-align: center;
         display: flex;
         padding: 0px;
         justify-content: center;
-    
-   }
-    
+    }
 
-   .detalhe-bolas{
-       
-     display: none;
+    .detalhe-bolas {
+        display: none;
     }
 }
-
-
-
-
