@@ -180,13 +180,17 @@ form .campo-container button:hover{
     .detalhe-bolas{
         position: absolute;
         right: initial;
-        bottom: -93px;
+        bottom: -153px;
+        left: 30px;
        
     }
     
 }
 
+
+
 @media screen and (max-width:767px) {
+  
     body{
         background-position: center;
         background-size: cover;
@@ -199,6 +203,12 @@ form .campo-container button:hover{
         padding: 39px 25px;
         
    }
+
+   .logo{
+        display: flex;
+        justify-content: center;
+    }
+
 
    main{
      background: none;
@@ -258,5 +268,7 @@ form .campo-container button:hover{
      display: none;
     }
 }
+
+
 
 
