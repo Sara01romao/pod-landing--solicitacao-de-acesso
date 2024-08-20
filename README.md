@@ -18,7 +18,7 @@ POD-Landing Page funcional para capturar solicitações de acesso, com um design
 <br>
 Fonte: Desafio Frontend Mentor
 
-<a href="https://sara01romao.github.io/pod-landing-solicitacao-de-acesso-html-css-javascript/" target="_blank"><strong>Acessar Desafio »</strong></a>
+<a href="https://sara01romao.github.io/pod-landing-solicitacao-de-acesso-html-css-javascript/" target="_blank"><strong>Acessar »</strong></a>
 
 <br>
 
